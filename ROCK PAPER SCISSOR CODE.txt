@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int user, computer = 2;
+
+    cout << "1. Rock\n2. Paper\n3. Scissors\n";
+    cout << "Enter your choice: ";
+    cin >> user;
+
+    cout << "Computer choice: " << computer << endl;
+
+    if (user == computer)
+        cout << "Draw";
+    else if ((user == 1 && computer == 3) ||
+             (user == 2 && computer == 1) ||
+             (user == 3 && computer == 2))
+        cout << "You Win";
+    else
+        cout << "Computer Wins";
+
+    return 0;
+}
